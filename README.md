@@ -6,4 +6,4 @@
 3. Sakinah Nurusyifa - H071221049
 
 # Link Dataset
-- Link Dataset (https://www.kaggle.com/competitions/titanic)
+- [Link Dataset](https://www.kaggle.com/competitions/titanic)
