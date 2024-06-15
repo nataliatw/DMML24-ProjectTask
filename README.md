@@ -9,4 +9,4 @@
 - [Link Dataset](https://www.kaggle.com/competitions/titanic)
 
 ## Kanban Board
-- [Link Kanban Board] (https://www.notion.so/b9de2ec103b94a48a89514f2bcbbcc39?v=c6e92543a24246fd886fd907986f2443&pvs=4)
+- [Link Kanban Board](https://www.notion.so/b9de2ec103b94a48a89514f2bcbbcc39?v=c6e92543a24246fd886fd907986f2443&pvs=4)
