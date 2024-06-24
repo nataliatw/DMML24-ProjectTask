@@ -1,0 +1,101 @@
+.App {
+  text-align: center;
+  background-image: url('C:/Users/ASUS/SurvivalPredictionAnalysis/frontend/public/background2.jpeg'); 
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.header{
+  margin: 20px;
+}
+.header h1,
+.header p {
+  margin: 5px 20px; 
+}
+
+.prediction-container {
+  background-color: #1E1E66;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form select,
+form input,
+form textarea {
+  margin: 10px ;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  width: 400px;
+  font-size: 16px;
+}
+
+.input-group {
+  width: 400px; 
+  text-align: left; 
+}
+
+.input-group label {
+  display: inline-block; 
+  margin-bottom: 5px;
+  color: white;
+  width: 150px;
+}
+
+.input-group select {
+  width: calc(100% - 150px); 
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.predict-button,
+.feedback-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 30px;
+  background-color: #000080;
+  color: white;
+  cursor: pointer;
+}
+
+.predict-button:hover,
+.feedback-button:hover {
+  background-color: #0000CD;
+}
+
+.feedback {
+  text-align: center;
+}
+
+.feedback-textarea {
+  width: 80%;
+  height: 100px;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
