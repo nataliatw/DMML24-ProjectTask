@@ -10,3 +10,14 @@
 
 ## Kanban Board
 - [Link Kanban Board](https://www.notion.so/b9de2ec103b94a48a89514f2bcbbcc39?v=c6e92543a24246fd886fd907986f2443&pvs=4)
+
+## Report 1
+![Report pertama](C:\Users\ASUS\OneDrive\Pictures\Screenshots\Screenshot 2024-06-24 132255.png)
+Menambahkan penjelasan terkait kode
+
+## Report 2
+![Report pertama](C:\Users\ASUS\OneDrive\Pictures\Screenshots\Screenshot 2024-06-24 131811.png)
+Menambahkan penjelasan terkait kode
+Membuat slide report
+Membuat file model terpisah
+Membuat visualisasi pemilihan model
