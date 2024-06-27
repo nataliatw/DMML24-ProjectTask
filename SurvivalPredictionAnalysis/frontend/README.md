@@ -41,4 +41,3 @@ npm start
 
 ![Screenshot 2024-06-27 123047](https://github.com/nataliatw/DMML24-ProjectTask/assets/114470172/4fdfa987-7707-4158-8ed7-5323b03fa23a)
 <h4 align="center">Tampilan Feedback</h4>
-```
