@@ -64,3 +64,4 @@ npm start
 <h3 align="center">Tampilan Hasil Prediksi</h3>
 ![Screenshot 2024-06-27 123047](https://github.com/nataliatw/DMML24-ProjectTask/assets/114470172/e87a4aa9-d78f-4b72-9807-834dfeda6535)
 <h3 align="center">Tampilan Feedback</h3>
+```
