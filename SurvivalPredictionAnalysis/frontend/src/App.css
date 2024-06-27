@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-image: url('C:/Users/ASUS/SurvivalPredictionAnalysis/frontend/public/background2.jpeg'); 
+  background-image: url('C:/Users/ASUS/OneDrive/Dokumen/Universitas/SEMESTER 4/DMML24-ProjectTask/SurvivalPredictionAnalysis/frontend/public/background2.jpeg'); 
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
@@ -12,9 +12,10 @@
   color: white;
 }
 
-.header{
+.header {
   margin: 20px;
 }
+
 .header h1,
 .header p {
   margin: 5px 20px; 
@@ -85,6 +86,23 @@ form textarea {
   background-color: #0000CD;
 }
 
+.insights {
+  background-color: #1E1E66;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+  max-width: 600px;
+}
+
+.insights h2 {
+  margin-top: 0;
+}
+
+.insights p {
+  text-align: left;
+}
+
 .feedback {
   text-align: center;
 }
@@ -98,4 +116,10 @@ form textarea {
   color: black;
   border: none;
   border-radius: 5px;
+}
+
+.prediction-text {
+  font-size: 24px; /* Make text larger */
+  font-weight: bold; /* Make text bold */
+  margin-top: 20px;
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './App.css';
+import Insights from './component/Insights';
 
 function App() {
   const [passengerClass, setPassengerClass] = useState('');
@@ -9,6 +10,7 @@ function App() {
   const [gender, setGender] = useState('');
   const [port, setPort] = useState('');
   const [prediction, setPrediction] = useState('');
+  const [insights, setInsights] = useState(null);
   const [feedback, setFeedback] = useState('');
   const [feedbackResponse, setFeedbackResponse] = useState('');
   const [feedbackSuccess, setFeedbackSuccess] = useState(false);
@@ -23,6 +25,7 @@ function App() {
         port: port
       });
       setPrediction(response.data.prediction);
+      setInsights(response.data.insights);
 
       setPassengerClass('');
       setAge('');
@@ -35,7 +38,6 @@ function App() {
   };
 
   const handleFeedback = async () => {
-    // Validasi feedback kosong sebelum mengirim
     if (feedback.trim() === '') {
       alert('Feedback cannot be empty');
       return;
@@ -102,11 +104,12 @@ function App() {
           </select>
           <button type="button" onClick={handlePredict} className="predict-button">Predict Now</button>
         </form>
-        {prediction && <p>{prediction}</p>}
+        {prediction && <p className="prediction-text">{prediction}</p>}
+        {insights && <Insights insights={insights} />}
       </div>
       <div className="feedback">
         <h2>Share Your Feedback with US</h2>
-        <p>Do you have suggestion or found some bug? Let us now in the field below</p>
+        <p>Do you have suggestion or found some bug? Let us know in the field below</p>
         <div>
           <textarea 
             placeholder="Send your Feedback here"

@@ -4,9 +4,10 @@ import joblib
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
+import json
 
 # Load the dataset
-titanic = pd.read_csv('C:/Users/ASUS/SurvivalPredictionAnalysis/Dataset/train.csv')
+titanic = pd.read_csv('C:/Users/ASUS/OneDrive/Dokumen/Universitas/SEMESTER 4/DMML24-ProjectTask/SurvivalPredictionAnalysis/Dataset/train.csv')
 
 # Function to fill missing values in Age column
 def fill_age_missing_values(titanic):
@@ -28,7 +29,11 @@ def fill_age_missing_values(titanic):
 titanic = fill_age_missing_values(titanic)
 titanic['Embarked'] = titanic['Embarked'].fillna('S')
 titanic['Fare'] = titanic['Fare'].fillna(titanic['Fare'].mean())
-titanic["Ftotal"] = 1 + titanic["SibSp"] + titanic["Parch"]
+
+# Calculating FamilySize before dropping SibSp and Parch
+titanic['FamilySize'] = titanic['SibSp'] + titanic['Parch'] + 1
+
+# Converting categorical columns to numerical
 titanic["Sex"] = titanic["Sex"].astype('category')
 titanic["sex"] = titanic["Sex"].cat.codes
 titanic["Embarked"] = titanic["Embarked"].astype('category')
@@ -72,3 +77,31 @@ y_pred_loaded = loaded_model.predict(X_test)
 
 # Ensure predictions are the same for both models
 print("Predictions from loaded model:", y_pred_loaded[:5])  # Display first 5 predictions
+
+# Calculate survival rate by gender
+survival_rate_by_gender = titanic.groupby('sex')['Survived'].mean()
+print("Survival Rate by Gender:\n", survival_rate_by_gender)
+
+# Calculate survival rate by class
+survival_rate_by_class = titanic.groupby('Pclass')['Survived'].mean()
+print("Survival Rate by Class:\n", survival_rate_by_class)
+
+# Calculate survival rate by age group
+titanic['AgeGroup'] = pd.cut(titanic['Age'], bins=[0, 12, 18, 35, 60, 100], labels=['Child', 'Teenager', 'Adult', 'Middle-Aged', 'Senior'])
+survival_rate_by_age_group = titanic.groupby('AgeGroup')['Survived'].mean()
+print("Survival Rate by Age Group:\n", survival_rate_by_age_group)
+
+# Calculate survival rate by family size
+survival_rate_by_family_size = titanic.groupby('FamilySize')['Survived'].mean()
+print("Survival Rate by Family Size:\n", survival_rate_by_family_size)
+
+# Save the insights to a JSON file for easy access
+survival_insights = {
+    "gender": survival_rate_by_gender.to_dict(),
+    "class": survival_rate_by_class.to_dict(),
+    "age_group": survival_rate_by_age_group.to_dict(),
+    "family_size": survival_rate_by_family_size.to_dict()
+}
+
+with open('survival_insights.json', 'w') as f:
+    json.dump(survival_insights, f)
