@@ -58,10 +58,10 @@ npm start
 ## Tampilan Aplikasi
 ![Screenshot 2024-06-27 122859](https://github.com/nataliatw/DMML24-ProjectTask/assets/114470172/9cb0b65d-9afb-48d7-9523-2fc21a64bc83)
 <h3 align="center">Tampilan Sebelum di Input</h3>
-![Screenshot 2024-06-27 122954](https://github.com/nataliatw/DMML24-ProjectTask/assets/114470172/46a96713-ba28-4753-885e-09282b8c8001)
+![Screenshot 2024-06-27 122954](https://github.com/nataliatw/DMML24-ProjectTask/assets/114470172/c47d5779-1d35-4ee0-9ff9-86aeb5b27a67)
 <h3 align="center">Tampilan Ketika di Input</h3>
-![Screenshot 2024-06-27 123017](https://github.com/nataliatw/DMML24-ProjectTask/assets/114470172/16c8cd4a-2119-43d6-8fe5-d341b83c5c49)
+![Screenshot 2024-06-27 123017](https://github.com/nataliatw/DMML24-ProjectTask/assets/114470172/fca297f5-199a-43ef-92fe-6bb7a71a6b69)
 <h3 align="center">Tampilan Hasil Prediksi</h3>
-![Screenshot 2024-06-27 123047](https://github.com/nataliatw/DMML24-ProjectTask/assets/114470172/e87a4aa9-d78f-4b72-9807-834dfeda6535)
+![Screenshot 2024-06-27 123047](https://github.com/nataliatw/DMML24-ProjectTask/assets/114470172/4fdfa987-7707-4158-8ed7-5323b03fa23a)
 <h3 align="center">Tampilan Feedback</h3>
 ```
